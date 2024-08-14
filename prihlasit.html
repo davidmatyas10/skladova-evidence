@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlásit se</title>
+    <link rel="stylesheet" href="prihlasit.css">
+</head>
+<body>
+    
+    <div class="prihlasit-container">
+        <form action="prihlasit.php" method="post">
+            <h2>Přihlásit se</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+    
+            <label for="heslo">Heslo:</label>
+            <input type="password" id="heslo" name="heslo" required>
+    
+            <button type="submit" name="prihlasit">Přihlásit</button>
+        </form>
+    
+        <div class="links-container">
+            <p><a href="registrovat.php">Nemáte účet? Zaregistrujte se zde.</a></p>
+            <p><a href="eshop.php">Vrátit se zpátky na eshop.</a></p>
+        </div>
+    </div>
+    
+    </body>
+    </html>

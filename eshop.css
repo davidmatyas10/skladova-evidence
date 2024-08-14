@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff; /* Change the color to match your design */
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0,5rem;
+    position: relative;
+    margin-top: auto;
+}
+
+.site-header, .site-footer, .footer-nav a, .main-nav a {
+    text-decoration: none;
+}
+
+.main-nav ul, .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-nav ul li, .footer-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav a, .footer-nav a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-nav a:hover, .footer-nav a:hover {
+    background-color: #0056b3;
+}
+
+.search-button, .search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #00408d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #003c70;
+}
+
+.produkty-kontejner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.produkt {
+    flex: 1 1 calc(33.333% - 1rem - (2 * 1rem));
+    margin-bottom: 1rem; /* Space at the bottom of each product */
+    padding: 1rem; /* Padding inside each product */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center of the 'product' container */
+}
+
+.produkt-obrazek{
+    width: 100%; /* This will make the image fill the container */
+    height: 200px; /* This sets a fixed height for the images */
+    object-fit: cover; /* This will cover the area without stretching the image */
+}
+
+.produkt:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.logo img{
+    max-width: 80px;
+    height: auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav li {
+    padding: 0 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-container button {
+    background-color: #17a2b8;
+    color: white;
+}
+
+#search-container button:hover {
+    background-color: #138496;
+}
+
+#search-container input[type="text"] {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+.produkt-detail {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: flex-start; /* Aligns content to the left side */
+    gap: 100px;
+}
+
+.produkt-obrazek-wrapper {
+    max-width: 500px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adds some space between the image and the details */
+}
+
+.produkt-info {
+    max-width: calc(100% - 220px); /* Adjusts the width accounting for the image and margin */
+    flex: 1;
+}
+
+.produkt-obrazek-detail {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Adjusts the object fit if needed */
+}
+
+.links-container {
+    text-align: center; /* Centrování textu uvnitř kontejneru */
+}
+
+.links-container p {
+    margin: 0.5em 0; /* Přidání vertikálního prostoru mezi odstavci */
+}
+
+.links-container a {
+    color: #007bff; /* Modrá barva odkazů */
+    text-decoration: none; /* Odstranění podtržení odkazu */
+}
+
+.links-container a:hover {
+    text-decoration: underline; /* Přidání podtržení při najetí myší */
+}

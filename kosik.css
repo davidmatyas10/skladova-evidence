@@ -1,0 +1,96 @@
+td img.produkt-obrazek {
+    max-width: 150px; /* nastavuje maximální šířku obrázku */
+    height: auto; /* zachovává poměr stran obrázku */
+    margin-right: 10px; /* přidává mezery kolem obrázku */
+}
+
+.odebrat-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.odebrat-btn:hover {
+    background-color: #c82333;
+}
+
+.mnozstvi-input {
+    width: 50px; /* Nastavení šířky inputu */
+    height: 30px; /* Nastavení výšky inputu */
+    border: 1px solid #ddd; /* Barva okraje */
+    border-radius: 5px; /* Zaoblení rohů */
+    text-align: center; /* Zarovnání textu do středu */
+    padding: 5px; /* Vnitřní odsazení */
+    margin: 0 10px; /* Odsazení z obou stran */
+    font-size: 16px; /* Velikost písma */
+    line-height: 1.25; /* Výška řádku */
+    color: #333; /* Barva textu */
+}
+
+.mnozstvi-input:focus {
+    outline: none; /* Odstranění outline při focusu */
+    border-color: #80bdff; /* Změna barvy okraje při focusu */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Přidání stínu pro lepší viditelnost focusu */
+}
+
+.kosik-text{
+    padding: 10px;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px; /* přidává mezeru nad celkovou cenu */
+    border-top: 1px solid #ddd; /* přidává čáru nad celkovou cenu */
+}
+
+.kosik-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 800px; /* nebo jiná maximální šířka dle preferencí */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.kosik-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary:active {
+    background-color: #00408d;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* For accessibility */
+.btn-primary.focus, .btn-primary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}

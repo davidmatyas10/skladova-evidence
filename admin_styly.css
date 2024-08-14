@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dashboard-container table {
+    width: 100%; /* Šířka tabulky na 80% šířky rodičovského kontejneru */
+    margin: 0 auto; /* Zarovnání tabulky do středu */
+    text-align: center; /* Zarovnání obsahu tabulky do středu */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.dashboard-container th,
+.dashboard-container td {
+    width: 25%; /* Rozdělení šířky na čtyři sloupce */
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.admin-dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px; /* Or any other width you prefer */
+    background-color: #ffffff; /* světlé pozadí pro sidebar */
+    padding: 10px;
+}
+
+.dashboard-container{
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 300px; /* Set a fixed width for the search box */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 650px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #218838;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.btnSeznamProduktu, .btnVytvoritProdukt, .btnOdstranitProdukt, .btnPridatZamestnance, .btnOdebratZamestnance {
+    /* Style your button */
+    margin-top: 20px; /* Or adjust as needed */
+}
+
+.sidebar a.btnSeznamProduktu, .sidebar a.btnVytvoritProdukt, .sidebar a.btnOdstranitProdukt, .sidebar a.btnPridatZamestnance,
+    .sidebar a.btnOdebratZamestnance, .sidebar a.btnOdhlasit, .sidebar a.btnEshop {
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a.btnSeznamProduktu:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .dashboard-container,
+    .search-and-products {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container input[type="text"] {
+        width: auto; /* Allow the search box to fill the space */
+        margin-bottom: 10px;
+    }
+}

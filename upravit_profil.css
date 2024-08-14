@@ -1,0 +1,42 @@
+.profil-kontejner {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styly pro nadpisy */
+.profil-kontejner h1 {
+    text-align: center;
+}
+
+/* Styly pro formulářové prvky */
+.profil-radek {
+    margin-bottom: 10px;
+}
+
+.profil-radek label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profil-radek input[type="text"],
+.profil-radek input[type="email"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profil-radek button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.profil-radek button[type="submit"]:hover {
+    background-color: #45a049;
+}

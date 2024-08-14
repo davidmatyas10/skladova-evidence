@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Odstraní dvojité okraje */
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd; /* Lehké okraje pro buňky */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Barevné střídání řádků */
+}
+
+/* Tlačítka a akční odkazy */
+.sidebar a.btnSeznamProduktu, .sidebar a.btnVytvoritProdukt, .sidebar a.btnOdstranitProdukt, .sidebar a.btnOdhlasit, .sidebar a.btnEshop{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btnSeznamProduktu:hover, .btnSeznamProduktu:hover {
+    background-color: #0056b3;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh; /* zajistí, že container zabere minimálně celou výšku obrazovky */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0; /* světlé pozadí pro sidebar */
+    padding: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 10px;
+}

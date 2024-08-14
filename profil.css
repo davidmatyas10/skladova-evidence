@@ -1,0 +1,73 @@
+.profil-kontejner {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.profil-kontejner h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profil-radek {
+    margin-bottom: 15px;
+}
+
+.profil-nadpis {
+    font-weight: bold;
+}
+
+.profil-hodnota {
+    margin-left: 10px;
+}
+
+.edit-profile-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+#change-password-form {
+    margin-top: 20px;
+}
+
+#change-password-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#change-password-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#change-password-form button[type="submit"] {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#change-password-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
